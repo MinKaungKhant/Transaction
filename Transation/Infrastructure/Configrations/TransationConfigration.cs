@@ -9,7 +9,7 @@ using Core;
 
 namespace Infrastructure.Configrations
 {
-    public  class TransationCongration : IEntityTypeConfiguration<Transaction>
+    public  class TransationConfigration : IEntityTypeConfiguration<Transaction>
     {
         public void Configure(EntityTypeBuilder<Transaction> builder)
         {

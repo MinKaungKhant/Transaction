@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "9b5b4719-b05a-492f-91e1-536d0fabd027",
+		"name": "Transaction API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5086/api/transaction/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5086",
+					"path": [
+						"api",
+						"transaction",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Transaction",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5086/api/transaction/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5086",
+							"path": [
+								"api",
+								"transaction",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Jan 2022 11:25:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": \"Invoice0000001\",\n            \"payment\": \"1000.00 USD\",\n            \"status\": \"A\"\n        },\n        {\n            \"id\": \"Invoice0000002\",\n            \"payment\": \"300.00 USD\",\n            \"status\": \"R\"\n        },\n        {\n            \"id\": \"Invoice0000003\",\n            \"payment\": \"300.00 USD\",\n            \"status\": \"D\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get By Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5086/api/transaction/getbystatus?status=A",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5086",
+					"path": [
+						"api",
+						"transaction",
+						"getbystatus"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "A"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Approved",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5086/api/transaction/getbystatus?status=A",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5086",
+							"path": [
+								"api",
+								"transaction",
+								"getbystatus"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "A"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Jan 2022 11:22:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"Invoice0000001\",\n        \"payment\": \"1000.00 USD\",\n        \"status\": \"A\"\n    }\n]"
+				},
+				{
+					"name": "Failed/Rejected",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5086/api/transaction/getbystatus?status=R",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5086",
+							"path": [
+								"api",
+								"transaction",
+								"getbystatus"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "R"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Jan 2022 11:25:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"Invoice0000002\",\n        \"payment\": \"300.00 USD\",\n        \"status\": \"R\"\n    }\n]"
+				},
+				{
+					"name": "Finished/Done",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5086/api/transaction/getbystatus?status=D",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5086",
+							"path": [
+								"api",
+								"transaction",
+								"getbystatus"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "D"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Jan 2022 11:25:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"Invoice0000003\",\n        \"payment\": \"300.00 USD\",\n        \"status\": \"D\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get By Currency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "USD",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5086/api/transaction/getbycurrency?currency=USD",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5086",
+							"path": [
+								"api",
+								"transaction",
+								"getbycurrency"
+							],
+							"query": [
+								{
+									"key": "currency",
+									"value": "USD"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Jan 2022 11:26:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"Invoice0000001\",\n        \"payment\": \"1000.00 USD\",\n        \"status\": \"A\"\n    },\n    {\n        \"id\": \"Invoice0000002\",\n        \"payment\": \"300.00 USD\",\n        \"status\": \"R\"\n    },\n    {\n        \"id\": \"Invoice0000003\",\n        \"payment\": \"300.00 USD\",\n        \"status\": \"D\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get By Date Range",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "Get By Date Range",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5086/api/transaction/getbydate?startdate=20/02/2019&enddate=21/02/2019",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5086",
+							"path": [
+								"api",
+								"transaction",
+								"getbydate"
+							],
+							"query": [
+								{
+									"key": "startdate",
+									"value": "20/02/2019"
+								},
+								{
+									"key": "enddate",
+									"value": "21/02/2019"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Jan 2022 11:28:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"Invoice0000001\",\n        \"payment\": \"1000.00 USD\",\n        \"status\": \"A\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
