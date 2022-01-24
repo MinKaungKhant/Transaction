@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bc996a8a-c5fc-4621-8195-7bad253da5da": {
+      "ProjectGuid": "bc996a8a-c5fc-4621-8195-7bad253da5da",
+      "DisplayName": "WebMvc",
+      "ColorIndex": 0
+    },
+    "08fb58f4-58e1-43b8-adb4-427c42860b68": {
+      "ProjectGuid": "08fb58f4-58e1-43b8-adb4-427c42860b68",
+      "DisplayName": "Core",
+      "ColorIndex": 1
+    },
+    "35613b48-6f24-4cf8-bced-cc8084ba3e71": {
+      "ProjectGuid": "35613b48-6f24-4cf8-bced-cc8084ba3e71",
+      "DisplayName": "Application",
+      "ColorIndex": 2
+    },
+    "bb639e4f-6740-4866-8236-75e73bdd7615": {
+      "ProjectGuid": "bb639e4f-6740-4866-8236-75e73bdd7615",
+      "DisplayName": "Infrastructure",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
