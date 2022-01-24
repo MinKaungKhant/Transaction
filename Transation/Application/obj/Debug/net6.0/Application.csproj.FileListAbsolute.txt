@@ -1,0 +1,17 @@
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\bin\Debug\net6.0\Application.deps.json
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\bin\Debug\net6.0\Application.dll
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\bin\Debug\net6.0\ref\Application.dll
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\bin\Debug\net6.0\Application.pdb
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\bin\Debug\net6.0\Core.dll
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\bin\Debug\net6.0\Infrastructure.dll
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\bin\Debug\net6.0\Infrastructure.pdb
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\bin\Debug\net6.0\Core.pdb
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\obj\Debug\net6.0\Application.dll
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\SourceCode\Desktop\Transaction\Transation\Application\obj\Debug\net6.0\Application.pdb
