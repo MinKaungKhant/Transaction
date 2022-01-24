@@ -13,6 +13,8 @@ namespace Infrastructure.Configrations
     {
         public void Configure(EntityTypeBuilder<TransactionLog> builder)
         {
+            builder.HasKey(x => x.id);
+            builder.Property(e=>e.id).IsRequired();
             builder.Property(e => e.filename).IsRequired();
             builder.Property(e => e.process).IsRequired();
             builder.Property(e => e.time).IsRequired();

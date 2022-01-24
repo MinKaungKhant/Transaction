@@ -16323,6 +16323,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\SourceCode\\Desktop\\Transaction\\Transation\\WebMvc\\Views\\Upload\\Index.cshtml",
+      "TargetPath": "Views\\Upload\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\SourceCode\\Desktop\\Transaction\\Transation\\WebMvc\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
